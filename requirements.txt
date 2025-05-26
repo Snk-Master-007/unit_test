@@ -1,0 +1,2 @@
+fastapi Version: 0.115.12
+requests Version: 2.32.3
