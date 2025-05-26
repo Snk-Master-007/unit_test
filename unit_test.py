@@ -7,7 +7,7 @@ app = FastAPI()
 @app.get("/run-tests")
 def run_tests():
     # Call NL2SQL app (assume it's deployed at http://nl2sql-app:8000)
-    response = requests.post("http://nl2sql-app:8000/nl2sql", json={"query": "get all users"})
+    response = requests.post("http://127.0.0.1:8000/nl2sql", json={"query": "get all users"})
 
     # Simulated test check
     if response.status_code == 200 and "sql" in response.json():
